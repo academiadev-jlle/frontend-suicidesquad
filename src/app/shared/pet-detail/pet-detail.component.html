@@ -1,0 +1,18 @@
+<div class="row ">
+  <h2 class="col-lg-12 order-lg-1">{{ pet.name}}</h2>
+  <ng-template [ngIf]="pet.isAdoption && !pet.isLost">
+    <p class="col-lg-12 order-lg-1">
+      Me adote, amigo.
+    </p>
+  </ng-template>
+  <ng-template [ngIf]="pet.isLost && !pet.isAdoption">
+    <p class="col-lg-12 order-lg-1">
+      Estou perdido. Por favor, me ajude.
+    </p>
+  </ng-template>
+  <img src="{{ pet.image }}"
+       class="col-lg-3 order-lg-2 text-white showcase-img" style="max-width: 300px "/>
+  <div class="col-lg-9 order-lg-1 my-auto showcase-text">
+    <p class="lead mb-0"> {{ pet.description }}</p>
+  </div>
+</div>

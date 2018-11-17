@@ -1,0 +1,20 @@
+<h1 class="mt-5 mb-3 text-black-50">Pets perdidos</h1>
+<div class="row">
+  <div *ngFor="let pet of lostPets" class="col-md-4">
+    <app-pet-list-item [pet]="pet">
+      <strong class="d-inline-block mb-2 text-primary">Perdido</strong>
+    </app-pet-list-item>
+  </div>
+</div>
+
+<h1 class="mt-2 mb-3 text-black-50">Disponíveis para adoção</h1>
+<div class="row">
+  <div *ngFor="let pet of adoptionPets" class="col-md-4">
+    <app-pet-list-item [pet]="pet">
+      <strong class="d-inline-block mb-2 text-info">Para adoção</strong>
+    </app-pet-list-item>
+  </div>
+  <div *ngIf="adoptionPets.length === 0" class="text-primary">
+    Nao tem pets para adocao
+  </div>
+</div>
