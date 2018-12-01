@@ -2,12 +2,12 @@ import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-formulario-cadastro-usuario',
-  templateUrl: './formulario-cadastro-usuario.component.html',
-  styleUrls: ['./formulario-cadastro-usuario.component.scss']
+  selector: 'app-user-register',
+  templateUrl: './user-register.component.html',
+  styleUrls: ['./user-register.component.scss']
 })
 
-export class FormularioCadastroUsuarioComponent implements OnInit {
+export class UserRegisterComponent implements OnInit {
   user_form: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private changeDetector: ChangeDetectorRef) { }

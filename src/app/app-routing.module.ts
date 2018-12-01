@@ -4,12 +4,12 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './public/home/home.component';
 import {PetDetailComponent} from './shared/pet-detail/pet-detail.component';
 import {LostPetsComponent} from './public/lost-pets/lost-pets.component';
-import {FormularioCadastroUsuarioComponent} from './shared/formulario-cadastro-usuario/formulario-cadastro-usuario.component';
+import {UserRegisterComponent} from './public/user-register/user-register.component';
 
 const routes: Routes = [
   {path: 'pet/:id/:slug', component: PetDetailComponent},
   {path: 'pet/lost', component: LostPetsComponent},
-  {path: 'user/register', component: FormularioCadastroUsuarioComponent},
+  {path: 'user/register', component: UserRegisterComponent},
   {path: '**', component: HomeComponent},
 ];
 

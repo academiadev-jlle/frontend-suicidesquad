@@ -5,9 +5,9 @@ import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {CommonModule} from '@angular/common';
 import {PetDetailComponent} from './pet-detail/pet-detail.component';
+import { CardComponent } from './card/card.component';
 import {RouterModule} from '@angular/router';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {FormularioCadastroUsuarioComponent} from './formulario-cadastro-usuario/formulario-cadastro-usuario.component';
 import { FormErrorMessageComponent } from './form-error-message/form-error-message.component';
 
 @NgModule ( {
@@ -22,14 +22,15 @@ import { FormErrorMessageComponent } from './form-error-message/form-error-messa
     FooterComponent,
     HeaderComponent,
     PetDetailComponent,
-    FormularioCadastroUsuarioComponent,
     FormErrorMessageComponent,
+    CardComponent,
   ],
   exports: [
     PetListItemComponent,
     FooterComponent,
     HeaderComponent,
-    PetDetailComponent
+    PetDetailComponent,
+    FormErrorMessageComponent,
   ]
 } )
 export class SharedModule {
