@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import {SharedModule} from './shared/shared.module';
@@ -20,7 +19,7 @@ import {CollapseModule} from 'ngx-bootstrap';
     SharedModule,
     PublicModule,
     AppRoutingModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
