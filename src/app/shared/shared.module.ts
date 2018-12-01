@@ -29,7 +29,8 @@ import { FormErrorMessageComponent } from './form-error-message/form-error-messa
     PetListItemComponent,
     FooterComponent,
     HeaderComponent,
-    PetDetailComponent
+    PetDetailComponent,
+    FormErrorMessageComponent,
   ]
 } )
 export class SharedModule {
